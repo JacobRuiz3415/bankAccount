@@ -12,10 +12,10 @@ def searchList(accountList, number):
 
 accountList = [account()]
 #one account
-myAccount = account()
+myAccount = account("name")
 
 #one account added to the list
-accountList.append(account())
+accountList.append(account("Jane"))
 
 amount = int(input("Enter a amount to deposit: "))
 
