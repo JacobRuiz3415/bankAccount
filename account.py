@@ -17,6 +17,7 @@ class account:
         self.balance =- amount
 
     def deposit(self, amount):
+        print(f'{self.balance} ${amount}.balance now ${self.balance}')
         self.balance =+ amount
 
     def TranferForward(self, other, amount):

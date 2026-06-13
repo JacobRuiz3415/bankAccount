@@ -7,7 +7,7 @@ def sort():
     print("sort")
 
 #find account
-def searchList(accountList, number):
+def searchList(accountList, name):
     return
 
 accountList = [account()]
