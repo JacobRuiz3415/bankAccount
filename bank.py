@@ -14,19 +14,19 @@ def sort():
 def searchList(accountList, name):
     index = -1
     for i in range(len(accountList)):
-   
         print("searching...")
         if(accountList[i].get_name() == name):
-             index = i
+            index = i
 
     return index
 
-accountList = [account()]
 #one account
-myAccount = account("name")
+myAccount = account(101,"name")
 
 #one account added to the list
-accountList.append(account("Jane"))
+accountList.append(account(accountCounter,"Jane"))
+## fortesting, there is a itntial depostit in 
+account[0].deposit(50)
 
 amount = int(input("Enter a amount to deposit: "))
 

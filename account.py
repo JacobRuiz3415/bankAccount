@@ -21,10 +21,13 @@ class account:
         print(f"${self.balance}")
 
     def withdraw(self, amount):
+        if ((self.get_Balance() - amount) < 0):
+            print("there is a overdraft")
+        print(f'${self.balance}before + ${amount}. account balance now ${self.balance}')
         self.balance =- amount
 
     def deposit(self, amount):
-        print(f'{self.balance} ${amount}.balance now ${self.balance}')
+        print(f'${self.balance}before + ${amount}. account balance now ${self.balance}')
         self.balance =+ amount
 
     def Tranfer_Forward(self, other, amount):
