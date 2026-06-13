@@ -1,13 +1,20 @@
 # account
 class account:
 
-    def __init__(self, name):
+    def __init__(self, ID, name):
+        self.ID = ID
         self.name = name
         self.balance = 0
         print("Account created")
 
     def get_Balance(self):
         return self.balance
+    
+    def get_ID(self):
+        pass
+
+    def get_name(self):
+        return self.name
     
     def print_balance(self):
         print(f"Acount name:{self.name}")
@@ -20,7 +27,7 @@ class account:
         print(f'{self.balance} ${amount}.balance now ${self.balance}')
         self.balance =+ amount
 
-    def TranferForward(self, other, amount):
+    def Tranfer_Forward(self, other, amount):
         self.balance =- amount
         other.balance =+ amount
 
@@ -36,6 +43,6 @@ class account:
 
 class saving(account):
     def setInterest(self, x):
-        self.interest = 0
+        self.interest = x
     
 

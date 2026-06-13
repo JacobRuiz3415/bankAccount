@@ -1,14 +1,25 @@
 from account import account
 # testing
 accountList = []
+accountCounter = 1
 
 #bubble sort 
+def swap(first, second):
+    pass
+
 def sort():
     print("sort")
 
 #find account
 def searchList(accountList, name):
-    return
+    index = -1
+    for i in range(len(accountList)):
+   
+        print("searching...")
+        if(accountList[i].get_name() == name):
+             index = i
+
+    return index
 
 accountList = [account()]
 #one account
@@ -27,5 +38,6 @@ myAccount.print_balance()
 #checking
 accountList[0].print_balance()
 
-amount = int(input("Enter a amount to deposit: "))
+amount = int(input("Enter a amount to wirthdraw: "))
 myAccount.withdraw(amount)
+myAccount.print_balance()
