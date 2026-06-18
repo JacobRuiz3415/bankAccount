@@ -5,6 +5,7 @@ class account:
         self.ID = ID
         self.name = name
         self.balance = 0
+        self.tranactions = []
         print("Account created")
 
     def get_Balance(self):
